@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.png" />
+    <link rel="stylesheet" href="./view/styles/cadastro.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastrar-se</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+
+        <div class="signIn-left">
+
+            <div class="slogan">
+                <p>NUNCA DEIXE O CARINHO PASSAR DESAPERCEBIDO COM</p>
+            </div>
+
+            <div class="app-name">
+                <h1>Remind Me</h1>
+            </div>
+
+            <div class="copyright-container">
+                <a href="#"><strong>Termos de Uso | Compatibilidade com Navegador e Tela</strong></a>
+                <p>Copyright © 2022 remindme.com.br</p>
+                <p>O acesso a este site é para todos.</p>
+            </div>
+
+        </div>
+
+        <div class="signIn-right">
+
+            <img src="/assets/just-logo-svg.svg" alt="logo">
+            <h1>Junte-se a nós</h1>
+            <h2>Cadastre-se aqui</h2>
+
+            <form action>
+
+                <div class="nome-sobrenome">
+                    <input id="nome" type="text" placeholder="Nome">
+                    <input id="sobrenome" type="text" placeholder="Sobrenome">
+                </div>
+
+                <div class="email">
+                    <input id="email" type="email" placeholder="Email">
+                </div>
+
+                <div class="senha">
+                    <input id="senha" type="password" placeholder="Senha">
+                    <input id="confirmaSenha" type="password" placeholder="Digite sua senha novamente">
+                </div>
+
+                <a href="/view/pages/login.html">Já é cadastrado?</a>
+
+                <div class="botao">
+                    <button type="submit">Cadastrar</button>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script>
+        function navigateTo(page) {
+          window.location.href = page;
+        }
+    </script>
+    <!-- <script type="module" src="/index.js"></script> -->
+  </body>
+</html>

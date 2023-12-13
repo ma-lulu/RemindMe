@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/view/styles/aniversarios.css">
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+
+    <title>RemindMe</title>
+</head>
+
+<body>
+    <div class="container">
+        <img src="/assets/logo.svg" alt="Logo" class="logo"></img>
+        <form id="form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" required>
+            <label for="birthdate">Data de Nascimento:</label>
+            <input type="date" id="birthdate" required>
+            <label for="notification">Notificação:</label>
+            <select id="notification">
+                <option value="0">No dia do aniversario</option>
+                <option value="1">1 dia antes</option>
+                <option value="7">1 semana antes</option>
+                <option value="30">1 mês antes</option>
+            </select>
+            <button type="submit">Adicionar</button>
+        </form>
+        <ul id="reminders"></ul>
+    </div>
+
+    <script src="/controller/aniversarios.js"></script>
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
